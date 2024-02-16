@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="/js/filter.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/filtre.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Filtre</title>
+</head>
+<body>
+      <section class="bg-success d-flex flex-row container-fluid" id="bloc"><p>Bloc 1 :</p>
+        <section class="bg-warning"><p>NAV</p>
+        </section>
+        <section class="bg-warning"><p>TOP</p>
+        </section>
+        <section class="bg-warning"><p>Filtre & Catalogue : </p>
+          <section class="col-md-4 bg-danger text-center" id="filter">
+            <div class="bg-info">
+              <h1 class="h3">Filtre :</h1>
+            </div>
+            <div class="" id="search">
+              <label for="search-filter" class="hidden">Rechercher</label>
+              <input type="search" name="search-filter" id="search-filter" class="col-xs-12"
+                     placeholder="Rechercher par mot clé.." >
+            </div>
+
+            <div id="search-results">TEST</div>
+
+            <div class="bg-warning container-fluid">
+              <p>BLOC 1</p>
+              <div class="">
+                <div class="">
+                  <div class="col-md-10 col-xs-10 bg-primary">
+                    <h2 class="h4">Domaine</h2>
+                  </div>
+                  <div class="col-md-2 col-xs-2 bg-info">
+                    <button id="btn-domaine">
+                      <img src="./img/icons8-flèche-développer-30.webp" alt="arrow_open">
+                    </button>
+                  </div>
+                </div>
+
+                  <section id="choice-domaine" class="filter-block">
+                    <div class="col-xs-6">
+                      <input type="checkbox" name="dwwm" id="dwwm">
+                      <label for="dwwm" class="h6">DEV WEB</label>
+                    </div>
+
+                    <div class="col-xs-6" >
+                      <input type="checkbox" name="data" id="data">
+                      <label for="data" class="h6">DATA</label>
+                    </div>
+                  </section>
+              </div>
+            </div>
+
+            <div class="bg-success container-fluid">
+              <p>BLOC 1</p>
+              <div class="">
+                <div class="">
+                  <div class="col-md-10 col-xs-10 bg-primary">
+                    <h3 class="h4">Rythme</h3>
+                  </div>
+                  <div class="col-md-2 col-xs-2 bg-info">
+                    <button id="btn-rythme">
+                      <img src="./img/icons8-flèche-développer-30.webp" alt="arrow_open">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-rythme" class="filter-block">
+                  <div class="col-xs-6">
+                    <input type="checkbox" name="alternance" id="alternance">
+                    <label for="alternance" class="h6">Alternance</label>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <input type="checkbox" name="continu" id="continu">
+                    <label for="continu" class="h6">Continu</label>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="bg-info container-fluid">
+              <p>BLOC 1</p>
+              <div class="">
+                <div class="">
+                  <div class="col-md-10 col-xs-10 bg-primary">
+                    <h3 class="h4">Formation</h3>
+                  </div>
+                  <div class="col-md-2 col-xs-2 bg-info">
+                    <button id="btn-formation">
+                      <img src="./img/icons8-flèche-développer-30.webp" alt="arrow_open">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-formation" class="filter-block">
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="diplomante" id="diplomante">
+                    <label for="diplomante" class="h6">Diplômante</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name=".diplomante" id=".diplomante">
+                    <label for=".diplomante" class="h6">Non Diplômante</label>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="bg-warning container-fluid">
+              <p>BLOC 1</p>
+              <div>
+                <div>
+                  <div class="col-md-10 col-xs-10 bg-primary">
+                    <h4>Durée des formations</h4>
+                  </div>
+                  <div class="col-md-2 col-xs-2 bg-info">
+                    <button id="btn-duration">
+                      <img src="/img/icons8-flèche-développer-30.webp" alt="arrow_open">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-duration" class="filter-block">
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="1month" id="1month">
+                    <label for="1month" class="h6">0 à 1 mois</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="3month" id="3month">
+                    <label for="3month" class="h6">1 à 3 mois</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="12month" id="12month">
+                    <label for="12month" class="h6">3 à 12 mois</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="months" id="months">
+                    <label for="months" class="h6">12 mois</label>
+                  </div>
+
+                </section>
+              </div>
+            </div>
+
+            <div class="bg-warning container-fluid">
+              <p>BLOC 1</p>
+              <div>
+                <div>
+                  <div class="col-md-10 col-xs-10 bg-primary">
+                    <h4>Je suis en/un</h4>
+                  </div>
+                  <div class="col-md-2 col-xs-2 bg-info">
+                    <button id="btn-target">
+                      <img src="/img/icons8-flèche-développer-30.webp" alt="arrow_open">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-target" class="filter-block">
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="employee" id="employee">
+                    <label for="employee" class="h6">Salarié</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="reconversion" id="reconversion">
+                    <label for="reconversion" class="h6">Reconversion</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="study" id="study">
+                    <label for="study" class="h6">Poursuite d'étude</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="initial" id="initial">
+                    <label for="initial" class="h6">Formation initiale</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="reorientation" id="reorientation">
+                    <label for="reorientation" class="h6">Réorientation</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="diploma" id="diploma">
+                    <label for="diploma" class="h6">Jeune diplomé généraliste</label>
+                  </div>
+
+                </section>
+              </div>
+            </div>
+
+
+
+
+
+          </section>
+
+          <section class="col-md-8 bg-success text-center"><p>Catalogue :</p>
+            <div><p>Barre </p>
+            </div>
+            <div><p>Carte 1</p>
+            </div>
+            <div><p>Carte 2</p>
+            </div>
+
+          </section>
+
+        </section>
+
+      </section>
+</body>
+</html>
