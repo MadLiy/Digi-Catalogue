@@ -1,20 +1,34 @@
 document.addEventListener( "DOMContentLoaded", function () {
   const searchFilter = document.getElementById('search-filter');
 
-  const btnDomaine = document.getElementById('btn-domaine');
-  const choiceDomaine = document.getElementById('choice-domaine');
+  const arrowFin = document.getElementById('arrow-financement');
+  const arrowSitu = document.getElementById('arrow-situation');
+  const arrowThematic = document.getElementById('arrow-thematic');
+  const arrowCertify = document.getElementById('arrow-certify');
+  const arrowLieu = document.getElementById('arrow-lieu');
+  const arrowNiveau = document.getElementById('arrow-niveau');
+  const arrowForma = document.getElementById('arrow-formation');
 
-  const btnRythme = document.getElementById('btn-rythme');
-  const choiceRythme = document.getElementById('choice-rythme');
+  const btnFinance = document.getElementById('btn-financement');
+  const choiceFinance = document.getElementById('choice-financement');
+
+  const btnSituation = document.getElementById('btn-situation');
+  const choiceSituation = document.getElementById('choice-situation');
+
+  const btnThematic = document.getElementById('btn-thematic');
+  const choiceThematic = document.getElementById('choice-thematic');
+
+  const btnNiveau = document.getElementById('btn-niveau');
+  const choiceNiveau = document.getElementById('choice-niveau');
 
   const btnFormation = document.getElementById('btn-formation');
   const choiceFormation = document.getElementById('choice-formation');
 
-  const btnDuration = document.getElementById('btn-duration');
-  const choiceDuration = document.getElementById('choice-duration');
+  const btnCertify = document.getElementById('btn-certify');
+  const choiceCertify = document.getElementById('choice-certify');
 
-  const btnTarget = document.getElementById('btn-target');
-  const choiceTarget = document.getElementById('choice-target');
+  const btnLieu = document.getElementById('btn-lieu');
+  const choiceLieu = document.getElementById('choice-lieu');
 
 
   searchFilter.addEventListener("keyup",
@@ -50,50 +64,81 @@ document.addEventListener( "DOMContentLoaded", function () {
     }
   });
 
-  btnDomaine.addEventListener("click",
+  btnFinance.addEventListener("click",
     function () {
-      if (choiceDomaine.style.display === "none" || choiceDomaine.style.display === "") {
-        choiceDomaine.style.display = "block";
+      if (choiceFinance.style.display === "none" || choiceFinance.style.display === "") {
+        choiceFinance.style.display = "block";
+        arrowFin.classList.add('rotated');
       } else {
-        choiceDomaine.style.display = "none";
+        choiceFinance.style.display = "none";
+        arrowFin.classList.remove("rotated")
       }
     });
 
 
-  btnRythme.addEventListener("click",
+  btnSituation.addEventListener("click",
     function () {
-      if (choiceRythme.style.display === "none" || choiceRythme.style.display === "") {
-        choiceRythme.style.display = "block";
+      if (choiceSituation.style.display === "none" || choiceSituation.style.display === "") {
+        choiceSituation.style.display = "block";
+        arrowSitu.classList.add('rotated');
       } else {
-        choiceRythme.style.display = "none";
+        choiceSituation.style.display = "none";
+        arrowSitu.classList.remove('rotated');
+      }
+    });
+
+  btnThematic.addEventListener("click",
+    function (){
+      if (choiceThematic.style.display === "none" || choiceThematic.style.display === ""){
+        choiceThematic.style.display = "block";
+        arrowThematic.classList.add('rotated');
+      } else {
+        choiceThematic.style.display = "none";
+        arrowThematic.classList.remove('rotated');
+      }
+    });
+
+  btnNiveau.addEventListener("click",
+    function () {
+      if (choiceNiveau.style.display === "none" || choiceNiveau.style.display === ""){
+        choiceNiveau.style.display = "block";
+        arrowNiveau.classList.add('rotated');
+      } else {
+        choiceNiveau.style.display = "none";
+        arrowNiveau.classList.remove('rotated');
       }
     });
 
   btnFormation.addEventListener("click",
-    function (){
+    function () {
       if (choiceFormation.style.display === "none" || choiceFormation.style.display === ""){
         choiceFormation.style.display = "block";
+        arrowForma.classList.add('rotated');
       } else {
         choiceFormation.style.display = "none";
+        arrowForma.classList.remove('rotated');
       }
     });
 
-  btnDuration.addEventListener("click",
+  btnLieu.addEventListener("click",
     function () {
-      if (choiceDuration.style.display === "none" || choiceDuration.style.display === ""){
-        choiceDuration.style.display = "block";
+      if (choiceLieu.style.display === "none" || choiceLieu.style.display === ""){
+        choiceLieu.style.display = "block";
+        arrowLieu.classList.add('rotated');
       } else {
-        choiceDuration.style.display = "none";
+        choiceLieu.style.display = "none";
+        arrowLieu.classList.remove('rotated');
       }
     });
 
-  btnTarget.addEventListener("click",
+  btnCertify.addEventListener("click",
     function () {
-      if (choiceTarget.style.display === "none" || choiceTarget.style.display === ""){
-        choiceTarget.style.display = "block";
-      } else {
-        choiceTarget.style.display = "none";
+      if (choiceCertify.style.display === "none" || choiceCertify.style.display === ""){
+        choiceCertify.style.display = "block";
+        arrowCertify.classList.add('rotated');
+      }else {
+        choiceCertify.style.display = "none";
+        arrowCertify.classList.remove('rotated');
       }
-  });
-
+    });
 });
