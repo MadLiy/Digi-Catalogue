@@ -50,21 +50,21 @@
 
 #svg1 {
   width: 31px;
-  height: 27px;
-  margin-top: 325%;
+  height: 21px;
+  margin-top: 355%;
 }
 #svg2 {
-  width: 31px;
-  height: 27px;
+  width: 27px;
+  height: 53px;
 }
 #svg3 {
-  width: 31px;
+  width: 27px;
   height: 27px;
   margin-bottom: 145%;
 }
 .groupesvg {
   display: grid;
-  margin-inline-start: 10%;
+  margin-inline-start: 4%;
 }
 .groupebulle {
   width: 1600px;
@@ -74,7 +74,7 @@
   display: flex;
 }
 .bulle {
-  margin-inline-start: 20%;
+  margin-inline-start: 1%;
   width: 126px;
   height: 24px;
   background-color: white;
@@ -85,15 +85,15 @@
   color: #003350;
 }
 span#CPF {
-  font-size: 10px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  line-height: 20px;
+  line-height: 15px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  width: 98px;
+  width: 104px;
   display: block;
   background: #f9ba03;
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
@@ -121,7 +121,7 @@ span#CPF::after {
 }
 
 span#Region {
-  font-size: 10px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -158,17 +158,58 @@ span#Region::after {
 .btn {
   background-color: #003350;
   border: #003350;
-  margin-inline-start: 10%;
+  margin-inline-start: 69%;
+  align-self: center;
 }
+
+.input-box {
+  position: relative;
+  height: 36px;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  margin: 5% 25%;
+  border-radius: 21px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border: solid #003350;
+  display: flex;
+}
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 15px 0 65px;
+  background-color: transparent;
+}
+
+
+.Aimg{
+  display:contents ;
+}
+
 @media screen and (max-width: 1100px) {
   .card {
     align-items: center; /* Centre les éléments sur l'axe transversal */
   }
 
   .cardimg {
-    /* Assurez-vous que les images ne dépassent pas la largeur de l'écran */
-    width: 100%; /* Prend toute la largeur disponible jusqu'à 375px */
-    max-width: 375px; /* Ne sera pas plus grand que 375px */
+   
+    width: 100%; 
+    max-width: 1000px; 
     
   }
 .img{
@@ -188,6 +229,8 @@ span#Region::after {
   .btn {
     background-color: #003350;
     border-radius:  0 0 17px 0;
+    margin-inline-start: 1%;
+
     
   }
   .TitreC {
@@ -200,11 +243,11 @@ span#Region::after {
     
   }
 
-  #svg1{width: 18px;margin-top: 395%;}
-  #svg2{width: 18px; margin: 18px 0 14px 0;}
+  #svg1{width: 18px;margin-top: 395%; height: 23px;}
+  #svg2{width: 18px; margin: 18px 0 14px 0; height: 35px;}
   #svg3 {
     width: 18px;
-   
+    height: 16px;
   }
 
   .groupesvg {
@@ -217,4 +260,22 @@ span#Region::after {
 span#Region{
   top : -232px
 }
+
+.input-box {
+  height: 66px;
+  margin: 0 -3px;
+}
+.input-box i {
+  left: 12px;
+  font-size: 25px;
+}
+.input-box input {
+  padding: 0 112px 0 50px;
+}
+.input-box .button {
+  right: 12px;
+  font-size: 14px;
+  padding: 8px 18px;
+}
+
 }
