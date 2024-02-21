@@ -2,6 +2,18 @@
   box-sizing: border-box;
 
 }
+.top-catalogue{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.top-catalogue img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top:0;
+  left: 0;
+}
 body{
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -25,15 +37,15 @@ section {
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(236,236,236);
+  background-color: #f8f8f8;
   color : #003350;
   padding: 0;
 }
 
 #finance, #situation, #thematic, #certify, #lieu, #niveau, #formation {
-  background-color: #D9D9D9;
-  border-bottom: 3px solid #8E8E8E;
-  margin-top: 1px;
+  background-color: #f2f2f2;
+  border-bottom: 3px solid #F9F9F9;
+  margin-top: 2px;
 }
 #formation{
   margin-bottom: 20px;
@@ -110,63 +122,78 @@ img {
   transform: rotate(180deg);
 }
 
+.btn-filter-mobile{
+  display: none;
+}
+.exit-filter{
+  display: none;
+}
+
+
 .filter-block {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-
-.filter-block {
-  flex-basis: calc(50% - 20px);
-  margin: 10px;
+  flex-basis: 100%;
+  margin: 10px 0;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
-
+.full-width-search {
+  width: 100%;
+  max-width: 100%;
+}
 .filter-block input[type="checkbox"] {
-  margin-right: 10px;
+  margin-left: 0;
+  margin-right: 0;
 }
-
 .filter-block label {
-  margin: 0;
   flex-basis: 100%;
-  font-family: "Roboto",sans-serif;
+  margin: 0;
 }
 
-@media (max-width: 390px) {
-  #bloc {
-    display: flex;
-    flex-direction: row;
-  }
-
+@media (max-width: 991px) {
   #filter {
-    max-width: 200px;
-    padding-right: 0;
+    display: none;
+  }
+  .btn-filter-mobile{
+    display: block;
+  }
+  .exit-filter{
+    display: none;
+  }
+  .btn-filter-mobile p {
+    color: #8E8E8E;
+  }
+  #exit-filter p {
+    color: #8E8E8E;
+
+  }
+  .img-filter-activated{
+    width: 30px;
+    height: 30px;
   }
 
   #catalogue {
+    display: flex;
+    flex-direction: column;
   }
 
   .filter-block {
-    flex-basis: calc(50% - 20px);
+    flex-basis: 100%;
     margin: 10px 0;
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .filter-block input[type="checkbox"] {
-    margin-right: 10px;
-  }
+  /*.filter-block input[type="checkbox"] {*/
+  /*  margin-right: 100px;*/
+  /*}*/
 
-  .filter-block label {
-    margin: 0;
-    flex-basis: 50%;
-    font-family: "Roboto",sans-serif;
-  }
-
-
-
+  /*.filter-block label {*/
+  /*  flex-basis: 100%;*/
+  /*  margin: 0;*/
+  /*}*/
 }
 
 

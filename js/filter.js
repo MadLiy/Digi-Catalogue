@@ -30,6 +30,11 @@ document.addEventListener( "DOMContentLoaded", function () {
   const btnLieu = document.getElementById('btn-lieu');
   const choiceLieu = document.getElementById('choice-lieu');
 
+  const btnFilter = document.getElementById('btn-filter-mobile');
+  const filter = document.getElementById('filter');
+
+  const hiddenBtnFilter = document.getElementById('activate-filter');
+  const exitFilter = document.getElementById('exit-filter');
 
   searchFilter.addEventListener("keyup",
     function (event) {
@@ -141,4 +146,28 @@ document.addEventListener( "DOMContentLoaded", function () {
         arrowCertify.classList.remove('rotated');
       }
     });
+  btnFilter.addEventListener("click", function () {
+    if (filter.style.display === "none" || filter.style.display === ""){
+      filter.style.display = "block";
+      hiddenBtnFilter.style.display = "none";
+      exitFilter.style.display = "block";
+
+    } else {
+      filter.style.display = "none";
+      hiddenBtnFilter.style.display = "none";
+      exitFilter.style.display = "none";
+    }
+  });
+
+  exitFilter.addEventListener("click", function () {
+    if (filter.style.display === "block"){
+      filter.style.display = "none";
+      hiddenBtnFilter.style.display = "block";
+      exitFilter.style.display = "none";
+    } else {
+      filter.style.display = "block";
+      hiddenBtnFilter.style.display = "none";
+      exitFilter.style.display = "block";
+    }
+  })
 });
