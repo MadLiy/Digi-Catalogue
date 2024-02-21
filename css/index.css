@@ -2,10 +2,11 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce pour l'agrandissement et l'ombre */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre de base */
 }
-#hover:hover {
+/* #hover:hover {
   transform: scale(1.05); /* Agrandissement de 5% */
-  box-shadow: 7px 7px 8px 8px rgba(142, 142, 142, 1); /* Ombre plus prononcée */
-}
+/*   box-shadow: 7px 7px 8px 8px rgba(142, 142, 142, 1);} *//* Ombre plus prononcée */
+
+
 
 .card-link {
   text-decoration: none; /* Supprime le soulignement par défaut des liens */
@@ -16,7 +17,7 @@
 
 
 .card {
-  max-width: 1600px;
+  max-width: 1250px;
   max-height:1200px;
   border: solid #003350;
   display: flex;
@@ -42,7 +43,7 @@
 
 .img {
   max-width: 489px;
-  max-height: 262px;
+  max-height: fit-content;
   border-right: solid #003350;
   border-radius: 17px 0 0 0;
   overflow: hidden;
@@ -51,7 +52,7 @@
 #svg1 {
   width: 31px;
   height: 21px;
-  margin-top: 355%;
+  margin-top: 258%;
 }
 #svg2 {
   width: 27px;
@@ -60,7 +61,7 @@
 #svg3 {
   width: 27px;
   height: 27px;
-  margin-bottom: 145%;
+  margin-bottom: 185%;
 }
 .groupesvg {
   display: grid;
@@ -83,6 +84,7 @@
   align-items: center;
   display: flex;
   color: #003350;
+  margin-top: 20px;
 }
 span#CPF {
   font-size: 18px;
@@ -98,7 +100,7 @@ span#CPF {
   background: #f9ba03;
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
   position: relative;
-  top: -241px;
+  top: -302px;
   left: -31px;
 }
 span#CPF::before {
@@ -134,7 +136,7 @@ span#Region {
   background: #d65745;
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
   position: relative;
-  top: -256px;
+  top: -303px;
   left: -30px;
 }
 span#Region::before {
@@ -156,7 +158,7 @@ span#Region::after {
   border-bottom: 3px solid transparent;
 }
 .btn {
-  background-color: #003350;
+
   border: #003350;
   margin-inline-start: 69%;
   align-self: center;
@@ -168,7 +170,7 @@ span#Region::after {
   max-width: 900px;
   width: 100%;
   background: #fff;
-  margin: 5% 25%;
+  margin: 5% 30%;
   border-radius: 21px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border: solid #003350;
@@ -251,7 +253,7 @@ span#Region::after {
   }
 
   .groupesvg {
-    margin-inline-start: 5%;
+    margin-inline-start: 0%;
   }
 
   span#CPF{
