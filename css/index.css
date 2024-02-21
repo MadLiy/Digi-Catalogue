@@ -1,0 +1,283 @@
+#hover{
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce pour l'agrandissement et l'ombre */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre de base */
+}
+/* #hover:hover {
+  transform: scale(1.05); /* Agrandissement de 5% */
+/*   box-shadow: 7px 7px 8px 8px rgba(142, 142, 142, 1);} *//* Ombre plus prononcée */
+
+
+
+.card-link {
+  text-decoration: none; /* Supprime le soulignement par défaut des liens */
+  color: inherit; /* Hérite la couleur de texte des éléments parents */
+  display: block; /* Rend le lien de type bloc pour occuper toute la largeur de la carte */
+}
+
+
+
+.card {
+  max-width: 1250px;
+  max-height:1200px;
+  border: solid #003350;
+  display: flex;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  margin: 5% auto;
+}
+
+.TitreC {
+  font-size: 36px;
+  color: #003350;
+}
+
+.textP {
+  font-size: 32px;
+  color: #003350;
+}
+.cardimg {
+  width: 389px;
+  height: 262px;
+  overflow: hidden;
+}
+
+.img {
+  max-width: 489px;
+  max-height: fit-content;
+  border-right: solid #003350;
+  border-radius: 17px 0 0 0;
+  overflow: hidden;
+}
+
+#svg1 {
+  width: 31px;
+  height: 21px;
+  margin-top: 258%;
+}
+#svg2 {
+  width: 27px;
+  height: 53px;
+}
+#svg3 {
+  width: 27px;
+  height: 27px;
+  margin-bottom: 185%;
+}
+.groupesvg {
+  display: grid;
+  margin-inline-start: 4%;
+}
+.groupebulle {
+  width: 1600px;
+  height: 58px;
+  background-color: #003350;
+  border-radius: 0px 0 17px 17px;
+  display: flex;
+}
+.bulle {
+  margin-inline-start: 1%;
+  width: 126px;
+  height: 24px;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #003350;
+  margin-top: 20px;
+}
+span#CPF {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 15px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 104px;
+  display: block;
+  background: #f9ba03;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: relative;
+  top: -302px;
+  left: -31px;
+}
+span#CPF::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+span#CPF::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+span#Region {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 150px;
+  display: block;
+  background: #d65745;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: relative;
+  top: -303px;
+  left: -30px;
+}
+span#Region::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+span#Region::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+.btn {
+
+  border: #003350;
+  margin-inline-start: 69%;
+  align-self: center;
+}
+
+.input-box {
+  position: relative;
+  height: 36px;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  margin: 5% 30%;
+  border-radius: 21px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border: solid #003350;
+  display: flex;
+}
+.input-box i,
+.input-box .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-box i {
+  left: 20px;
+  font-size: 30px;
+  color: #707070;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 15px 0 65px;
+  background-color: transparent;
+}
+
+
+.Aimg{
+  display:contents ;
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    align-items: center; /* Centre les éléments sur l'axe transversal */
+  }
+
+  .cardimg {
+   
+    width: 100%; 
+    max-width: 1000px; 
+    
+  }
+.img{
+    border-radius: 18px 18px 0 0;
+    max-width: 100%;
+}
+  .groupebulle {
+    /* Ajustez la mise en page des bulles */
+    max-width: 100%;
+    justify-content: center; /* Centre les bulles dans le conteneur */
+  }
+.bulle{
+    margin-inline-start: 2%;
+    padding: 0 5PX 0 5px;
+}
+  
+  .btn {
+    background-color: #003350;
+    border-radius:  0 0 17px 0;
+    margin-inline-start: 1%;
+
+    
+  }
+  .TitreC {
+    font-size: 24px;
+  }
+  .textP {
+    font-size: 18px;
+    line-height: 41px;
+    margin-inline-start: 10px;
+    
+  }
+
+  #svg1{width: 18px;margin-top: 395%; height: 23px;}
+  #svg2{width: 18px; margin: 18px 0 14px 0; height: 35px;}
+  #svg3 {
+    width: 18px;
+    height: 16px;
+  }
+
+  .groupesvg {
+    margin-inline-start: 0%;
+  }
+
+  span#CPF{
+    top : -232px
+  }
+span#Region{
+  top : -232px
+}
+
+.input-box {
+  height: 66px;
+  margin: 0 -3px;
+}
+.input-box i {
+  left: 12px;
+  font-size: 25px;
+}
+.input-box input {
+  padding: 0 112px 0 50px;
+}
+.input-box .button {
+  right: 12px;
+  font-size: 14px;
+  padding: 8px 18px;
+}
+
+}
