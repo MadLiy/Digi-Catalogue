@@ -74,7 +74,6 @@
         </p>
       </div>
       <footer class="groupebulle">
-       
 
         <p class="bulle">JAVA</p>
         <p class="bulle">VUE.JS</p>
@@ -87,25 +86,7 @@
       </footer>
     </article>
     <script>
-      document.getElementById('searchInput').addEventListener('input', function(e) {
-    var searchQuery = e.target.value.toLowerCase();
-    var cards = document.querySelectorAll('.formation-card');
-
-    cards.forEach(function(card) {
-        var cardText = card.textContent.toLowerCase();
-        if (cardText.includes(searchQuery)) {
-            card.style.display = ''; // Affiche l'article si correspondant
-        } else {
-            card.style.display = 'none'; // Masque l'article si non correspondant
-        }
-      });
-    })
-
-      // Sélectionnez l'élément et ajoutez un écouteur d'événements 'click'
-      document.getElementById('hover').addEventListener('click', function() {
-        // Rediriger l'utilisateur vers l'URL souhaitée lors du clic sur l'article
-        window.location.href = '../404.html'; // Changez cette URL par celle de votre choix
-      });
+     
     </script>
     
   </body>

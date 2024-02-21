@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="/js/filter.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/filtre.css">
+  <link  rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Filtre</title>
+</head>
+<body>
+      
+        <section class="main"><p>Filtre & Catalogue : </p>
+          <section class="col-md-2 text-center" id="filter">
+            <div class="">
+              <h1 class="h2">FILTRE :</h1>
+            </div>
+            <div id="search">
+              <label for="search-filter" class="hidden">Rechercher</label>
+              <input type="search" name="search-filter" id="search-filter" class=""
+                     placeholder="Rechercher par mot clé.." >
+            </div>
+
+            <div id="finance">
+              <div class="">
+                <div class="">
+                  <div class="col-md-9 col-xs-9">
+                    <h2 class="h6" id="title-finance">FINANCEMENT</h2>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-financement">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-financement" class="fleche">
+                    </button>
+                  </div>
+                </div>
+
+                  <section id="choice-financement" class="filter-block">
+                    <div class="">
+                      <input type="checkbox" name="cpf" id="cpf" class="col-md-3">
+                      <label for="cpf" class="h6">CPF</label>
+                    </div>
+
+                    <div class="" >
+                      <input type="checkbox" name="region" id="region">
+                      <label for="region" class="h6">Région</label>
+                    </div>
+
+                    <div class="" >
+                      <input type="checkbox" name="franceT" id="franceT">
+                      <label for="franceT" class="h6">France Travail</label>
+                    </div>
+
+                    <div class="" >
+                      <input type="checkbox" name="opco" id="opco">
+                      <label for="opco" class="h6">OPCO</label>
+                    </div>
+
+                    <div class="" >
+                      <input type="checkbox" name="entreprise" id="entreprise">
+                      <label for="entreprise" class="h6">Entreprise</label>
+                    </div>
+
+                    <div class="" >
+                      <input type="checkbox" name="finPerso" id="finPerso">
+                      <label for="finPerso" class="h6">Financement Personnel</label>
+                    </div>
+                  </section>
+              </div>
+            </div>
+
+            <div class="" id="situation">
+              <div class="">
+                <div class="">
+                  <div class="col-md-9 col-xs-9">
+                    <h3 class="h4">SITUATION</h3>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-situation">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-situation" class="fleche">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-situation" class="filter-block">
+                  <div class="col-xs-6">
+                    <input type="checkbox" name="employee" id="employee">
+                    <label for="employee" class="h6">Salarié</label>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <input type="checkbox" name="student" id="student">
+                    <label for="student" class="h6">Étudiants</label>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <input type="checkbox" name="de" id="de">
+                    <label for="de" class="h6">DE</label>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <input type="checkbox" name="reconversion" id="reconversion">
+                    <label for="reconversion" class="h6">Reconversion</label>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="thematic">
+              <div class="">
+                <div class="">
+                  <div class="col-md-9 col-xs-9">
+                    <h4>THÉMATIQUE</h4>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-thematic" >
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-thematic" class="fleche">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-thematic" class="filter-block">
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="dwwm" id="dwwm">
+                    <label for="dwwm" class="h6">Dev Web</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="data" id="data">
+                    <label for="data" class="h6">DATA</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="fonctionnel" id="fonctionnel">
+                    <label for="fonctionnel" class="h6">Fonctionnel</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="devops" id="devops">
+                    <label for="devops" class="h6">Testing & Devops</label>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="certify">
+              <div class="">
+                <div class="">
+                  <div class="col-md-9 col-xs-9 ">
+                    <h5 class="h4">CERTIFICATION</h5>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-certify">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-certify" class="fleche">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-certify" class="filter-block">
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="diplomat" id="diplomat">
+                    <label for="diplomat" class="h6">Diplômante</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="certifation" id="certifation">
+                    <label for="certifation" class="h6">Certifiante</label>
+                  </div>
+
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="lieu">
+              <div class="">
+                <div class="">
+                  <div class="col-md-9 col-xs-9">
+                    <h6 class="h4">LIEU</h6>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-lieu">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-lieu" class="fleche">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-lieu" class="filter-block">
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="montpellier" id="montpellier">
+                    <label for="montpellier" class="h6">Montpellier</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="nantes" id="nantes">
+                    <label for="nantes" class="h6">Nantes</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="distanciel" id="distanciel">
+                    <label for="distanciel" class="h6">Distanciel</label>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="niveau">
+              <div>
+                <div>
+                  <div class="col-md-9 col-xs-9">
+                    <h6 class="h4">NIVEAU</h6>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-niveau">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-niveau" class="fleche">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-niveau" class="filter-block">
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="bac" id="bac">
+                    <label for="bac" class="h6">Bac</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="bac2" id="bac2">
+                    <label for="bac2" class="h6">Bac + 2</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="bac3" id="bac3">
+                    <label for="bac3" class="h6">Bac + 3</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="bac5" id="bac5">
+                    <label for="bac5" class="h6">Bac + 5</label>
+                  </div>
+
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="formation">
+              <div>
+                <div>
+                  <div class="col-md-9 col-xs-9">
+                    <h6 class="h4">TYPE DE FORMATION</h6>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-formation">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-formation" class="text-primary fleche">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-formation" class="filter-block">
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="continu" id="continu">
+                    <label for="continu" class="h6">Continu</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="alternance" id="alternance">
+                    <label for="alternance" class="h6">Alternance</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="poec" id="poec">
+                    <label for="poec" class="h6">POEC</label>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6">
+                    <input type="checkbox" name="poei" id="poei">
+                    <label for="poei" class="h6">POEI</label>
+                  </div>
+
+                </section>
+              </div>
+            </div>
+
+          </section>
+
+          <section class=" col-md-10 text-center" id="catalogue">
+            <div class="input-box">
+              <i class="uil uil-search"></i>
+            <a class="Aimg" ><img src="../img/magnifying-glass-solid 1.svg" style="margin-inline-start: 1%;"></a>
+              <input type="text" placeholder="Intitulé ..." id="searchInput" />
+             <a class="Aimg" id="Aimg"><img src="../img/sliders-solid 1.svg" style="margin-inline-end: 5%;"></a>
+            </div>
+            </div>
+            
+            <article class="card formation-card" id="hover" >
+              <div class="groupetext">
+              <div class="cardimg"> 
+                <img  src="../img/developpeurs-web-dessines-main_23-2148819604.jpg.avif" alt="Développeurs web dessinés à la main" class="img" />
+                <span id="CPF">CPF</span>
+                <span id="Region">Région</span>
+                    </div>
+                    <div class="text">
+                <h1 class="TitreC">Développeur Web et Mobile</h1>
+                <p class="textP"> <i><img src="../img/award-solid.svg" alt="Récompense" id="svg1" /></i>     Bac+2 - Titre professionnel</p>
+                <p class="textP"><i><img src="../img/hourglass-half-solid.svg" alt="Durée" id="svg2" /></i> Formation sur 9 mois au centre Diginamic</p>
+                <p class="textP"> <i><img src="../img/building-solid.svg" alt="Institution" id="svg3" /></i>Parcours Alternance/Continu </p>
+                </p>
+              </div>
+              </div>
+              <div class="groupebulle">
+               
+        
+                <p class="bulle">PHP</p>
+                <p class="bulle">HTML</p>
+                <p class="bulle">CSS</p>
+        
+               
+                <a href="../404.html"  class="btn"  aria-label="En savoir plus sur la formation">
+                  <img src="../img/fleche.png" alt="Flèche pointant vers la droite" />
+                </a>
+              </div>
+            </article>
+            </div>
+            <article class="card formation-card" id="hover" >
+              <div class="groupetext">
+              <div class="cardimg"> 
+                <img  src="../img/developpeurs-web-dessines-main_23-2148819604.jpg.avif" alt="Développeurs web dessinés à la main" class="img" />
+                <span id="CPF">CPF</span>
+                <span id="Region">Région</span>
+                    </div>
+                    <div class="text">
+                <h1 class="TitreC">Développeur Web et Mobile</h1>
+                <p class="textP"> <i><img src="../img/award-solid.svg" alt="Récompense" id="svg1" /></i>     Bac+2 - Titre professionnel</p>
+                <p class="textP"><i><img src="../img/hourglass-half-solid.svg" alt="Durée" id="svg2" /></i> Formation sur 9 mois au centre Diginamic</p>
+                <p class="textP"> <i><img src="../img/building-solid.svg" alt="Institution" id="svg3" /></i>Parcours Alternance/Continu </p>
+                </p>
+              </div>
+              </div>
+              <div class="groupebulle">
+
+                <p class="bulle">PHP</p>
+                <p class="bulle">HTML</p>
+                <p class="bulle">CSS</p>
+
+                <a href="../404.html"  class="btn"  aria-label="En savoir plus sur la formation">
+                  <img src="../img/fleche.png" alt="Flèche pointant vers la droite" />
+                </a>
+              </div>
+            </article>
+          </section>
+        </section>
+</body>
+</html>
