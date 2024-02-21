@@ -1,3 +1,5 @@
+
+
 #hover{
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce pour l'agrandissement et l'ombre */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre de base */
@@ -15,25 +17,35 @@
 }
 
 
-
+.groupetext{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 .card {
-  max-width: 1250px;
+  max-width: 1150px;
   max-height:1200px;
   border: solid #003350;
   display: flex;
   border-radius: 20px;
   flex-wrap: wrap;
   margin: 5% auto;
+  flex-direction: column;
 }
 
 .TitreC {
   font-size: 36px;
   color: #003350;
 }
-
+.text{
+  margin-left: 4vw;
+}
 .textP {
   font-size: 32px;
   color: #003350;
+  text-align: initial;
 }
 .cardimg {
   width: 389px;
@@ -52,7 +64,7 @@
 #svg1 {
   width: 31px;
   height: 21px;
-  margin-top: 258%;
+  
 }
 #svg2 {
   width: 27px;
@@ -61,14 +73,14 @@
 #svg3 {
   width: 27px;
   height: 27px;
-  margin-bottom: 185%;
+  
 }
 .groupesvg {
   display: grid;
   margin-inline-start: 4%;
 }
 .groupebulle {
-  width: 1600px;
+  
   height: 58px;
   background-color: #003350;
   border-radius: 0px 0 17px 17px;
@@ -165,19 +177,18 @@ span#Region::after {
 }
 
 .input-box {
+  margin-inline-start: 10%;
   position: relative;
-  height: 36px;
+  height: 40px;
   max-width: 900px;
   width: 100%;
   background: #fff;
-  margin: 5% 30%;
   border-radius: 21px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border: solid #003350;
   display: flex;
 }
-.input-box i,
-.input-box .button {
+.input-box i,.input-box .button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -199,20 +210,24 @@ span#Region::after {
 }
 
 
+
+
+
 .Aimg{
   display:contents ;
 }
 
 @media screen and (max-width: 1100px) {
-  .card {
-    align-items: center; /* Centre les éléments sur l'axe transversal */
+  .input-box {
+    margin-inline-start: 0%;
   }
 
   .cardimg {
    
     width: 100%; 
-    max-width: 1000px; 
-    
+    max-width: 450px; 
+    display: flex;
+    flex-wrap: wrap;
   }
 .img{
     border-radius: 18px 18px 0 0;
@@ -220,7 +235,7 @@ span#Region::after {
 }
   .groupebulle {
     /* Ajustez la mise en page des bulles */
-    max-width: 100%;
+    min-width: 100%;
     justify-content: center; /* Centre les bulles dans le conteneur */
   }
 .bulle{
@@ -231,12 +246,16 @@ span#Region::after {
   .btn {
     background-color: #003350;
     border-radius:  0 0 17px 0;
-    margin-inline-start: 1%;
+    margin-inline-start: 40%;
 
     
   }
   .TitreC {
     font-size: 24px;
+  }
+  .groupetext{
+    align-items: initial;
+    display: contents;
   }
   .textP {
     font-size: 18px;
@@ -245,8 +264,8 @@ span#Region::after {
     
   }
 
-  #svg1{width: 18px;margin-top: 395%; height: 23px;}
-  #svg2{width: 18px; margin: 18px 0 14px 0; height: 35px;}
+  #svg1{width: 18px; height: 23px;}
+  #svg2{width: 18px;  height: 35px;}
   #svg3 {
     width: 18px;
     height: 16px;
@@ -257,27 +276,16 @@ span#Region::after {
   }
 
   span#CPF{
-    top : -232px
+    margin-top: 2%;
+    max-height: 20px;
   }
 span#Region{
-  top : -232px
+  left: -137px;    
+    max-height: 20px;       
+    margin-top: 6%;
+  }
 }
 
-.input-box {
-  height: 66px;
-  margin: 0 -3px;
-}
-.input-box i {
-  left: 12px;
-  font-size: 25px;
-}
-.input-box input {
-  padding: 0 112px 0 50px;
-}
-.input-box .button {
-  right: 12px;
-  font-size: 14px;
-  padding: 8px 18px;
-}
 
-}
+
+
