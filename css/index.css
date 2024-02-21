@@ -2,9 +2,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce pour l'agrandissement et l'ombre */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre de base */
 }
-/* #hover:hover {
+ #hover:hover {
   transform: scale(1.05); /* Agrandissement de 5% */
-/*   box-shadow: 7px 7px 8px 8px rgba(142, 142, 142, 1);} *//* Ombre plus prononcée */
+  box-shadow: 7px 7px 8px 8px rgba(142, 142, 142, 1);} /* Ombre plus prononcée */
 
 
 
