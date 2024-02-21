@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="/js/filter.js" defer></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/filtre.css">
+  <title>Filtre</title>
+</head>
+<body>
+      <section id="bloc">
+        <section class="top-catalogue">
+          <img src="/img/top.png" alt="">
+        </section>
+        <section class="">
+          <div class="btn-filter-mobile text-center" id="activate-filter">
+            <button id="btn-filter-mobile"><img src="/img/filter-mobile.png" alt="" class="img-filter-activated"></button>
+            <p>Afficher les filtres</p>
+          </div>
+          <div class="exit-filter text-center" id="exit-filter">
+            <button id="btn-exit-filter">
+              <img src="/img/X.png" alt="" class="img-filter-deactivated">
+            </button>
+            <p>Masquer les filtres</p>
+          </div>
+
+          <section class="col-md-2 container-fluid" id="filter">
+            <div class="">
+              <h1 class="h2 text-center">FILTRE(S) :</h1>
+            </div>
+            <div id="search" class="text-center container-fluid">
+              <label for="search-filter" class="hidden">Rechercher</label>
+              <input type="search" name="search-filter" id="search-filter" class=""
+                     placeholder="Rechercher par mot clé.." >
+            </div>
+
+            <div id="finance">
+              <div class="">
+                <div class="text-center">
+                  <div class="col-md-9 col-xs-9 ">
+                    <h2 class="h6 " id="title-finance">FINANCEMENT</h2>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-financement">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-financement">
+                    </button>
+                  </div>
+                </div>
+
+                  <section id="choice-financement" class="filter-block">
+                    <div class="col-md-12 col-xs-12 text-center">
+                      <input type="checkbox" name="cpf" id="cpf" class="">
+                      <label for="cpf" class="h6">CPF</label>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12 text-center" >
+                      <input type="checkbox" name="opco" id="opco">
+                      <label for="opco" class="h6">OPCO</label>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12 text-center" >
+                      <input type="checkbox" name="region" id="region">
+                      <label for="region" class="h6">Région</label>
+                    </div>
+
+
+
+                    <div class="col-md-12 col-xs-12 text-center" >
+                      <input type="checkbox" name="entreprise" id="entreprise">
+                      <label for="entreprise" class="h6">Entreprise</label>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12 text-center" >
+                      <input type="checkbox" name="finPerso" id="finPerso">
+                      <label for="finPerso" class="h6">Financement Personnel</label>
+                    </div>
+
+                    <div class="col-md-12 col-xs-12 text-center" >
+                      <input type="checkbox" name="franceT" id="franceT">
+                      <label for="franceT" class="h6">France Travail</label>
+                    </div>
+                  </section>
+              </div>
+            </div>
+
+            <div class="" id="situation">
+              <div class="">
+                <div class="text-center">
+                  <div class="col-md-9 col-xs-9">
+                    <h3 class="h4">SITUATION</h3>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-situation">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-situation">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-situation" class="filter-block">
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="employee" id="employee">
+                    <label for="employee" class="h6">Salarié</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="student" id="student">
+                    <label for="student" class="h6">Étudiants</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="de" id="de">
+                    <label for="de" class="h6">DE</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="reconversion" id="reconversion">
+                    <label for="reconversion" class="h6">Reconversion</label>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="thematic">
+              <div class="">
+                <div class="text-center">
+                  <div class="col-md-9 col-xs-9">
+                    <h4>THÉMATIQUE</h4>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-thematic" >
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-thematic">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-thematic" class="filter-block">
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="dwwm" id="dwwm">
+                    <label for="dwwm" class="h6">Dev Web</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="data" id="data">
+                    <label for="data" class="h6">DATA</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="fonctionnel" id="fonctionnel">
+                    <label for="fonctionnel" class="h6">Fonctionnel</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="devops" id="devops">
+                    <label for="devops" class="h6">Testing & Devops</label>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="certify">
+              <div class="">
+                <div class="text-center">
+                  <div class="col-md-9 col-xs-9 ">
+                    <h5 class="h4">CERTIFICATION</h5>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-certify">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-certify">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-certify" class="filter-block">
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="diplomat" id="diplomat">
+                    <label for="diplomat" class="h6">Diplômante</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="certifation" id="certifation">
+                    <label for="certifation" class="h6">Certifiante</label>
+                  </div>
+
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="lieu">
+              <div class="">
+                <div class="text-center">
+                  <div class="col-md-9 col-xs-9">
+                    <h6 class="h4">LIEU</h6>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-lieu">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-lieu">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-lieu" class="filter-block">
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="montpellier" id="montpellier">
+                    <label for="montpellier" class="h6">Montpellier</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="nantes" id="nantes">
+                    <label for="nantes" class="h6">Nantes</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="distanciel" id="distanciel">
+                    <label for="distanciel" class="h6">Distanciel</label>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="niveau">
+              <div>
+                <div class="text-center">
+                  <div class="col-md-9 col-xs-9">
+                    <h6 class="h4">NIVEAU</h6>
+                  </div>
+                  <div class="col-md-3 col-xs-3">
+                    <button id="btn-niveau">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-niveau">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-niveau" class="filter-block">
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="bac" id="bac">
+                    <label for="bac" class="h6">Bac</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="bac2" id="bac2">
+                    <label for="bac2" class="h6">Bac + 2</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="bac3" id="bac3">
+                    <label for="bac3" class="h6">Bac + 3</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="bac5" id="bac5">
+                    <label for="bac5" class="h6">Bac + 5</label>
+                  </div>
+
+                </section>
+              </div>
+            </div>
+
+            <div class="" id="formation">
+              <div class="">
+                <div class="">
+                  <div class="col-md-9 col-xs-9 text-center">
+                    <h6 class="h4">TYPE DE FORMATION</h6>
+                  </div>
+                  <div class="col-md-3 col-xs-3 text-center">
+                    <button id="btn-formation">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-formation" class="text-primary">
+                    </button>
+                  </div>
+                </div>
+
+                <section id="choice-formation" class="filter-block">
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="continu" id="continu">
+                    <label for="continu" class="h6">Continu</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="alternance" id="alternance">
+                    <label for="alternance" class="h6">Alternance</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="poec" id="poec">
+                    <label for="poec" class="h6">POEC</label>
+                  </div>
+
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <input type="checkbox" name="poei" id="poei">
+                    <label for="poei" class="h6">POEI</label>
+                  </div>
+
+                </section>
+              </div>
+            </div>
+
+          </section>
+
+          <section class=" col-md-10 text-center" id="catalogue"><p>Catalogue :</p>
+            <div><p>Barre </p>
+            </div>
+            <div><p>Carte 1</p>
+            </div>
+            <div><p>Carte 2</p>
+            </div>
+
+          </section>
+
+        </section>
+
+      </section>
+</body>
+</html>
