@@ -115,7 +115,9 @@ button {
   border: none;
 }
 
-img {
+#arrow-financement, #arrow-certify,
+#arrow-formation, #arrow-lieu,
+#arrow-niveau, #arrow-situation, #arrow-thematic {
   width: 15px;
   height: 15px;
 }

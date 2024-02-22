@@ -7,6 +7,7 @@
   <script src="/js/filter.js" defer></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/filtre.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>Filtre</title>
 </head>
 <body>
@@ -51,8 +52,8 @@
 
                   <section id="choice-financement" class="filter-block">
                     <div class="col-md-12 col-xs-12 text-center">
-                      <input type="checkbox" name="cpf" id="cpf" class="">
-                      <label for="cpf" class="h6">CPF</label>
+                      <input type="checkbox" name="cpf" id="cpf-filter" class="">
+                      <label for="cpf-filter" class="h6">CPF</label>
                     </div>
 
                     <div class="col-md-12 col-xs-12 text-center" >
@@ -61,8 +62,8 @@
                     </div>
 
                     <div class="col-md-12 col-xs-12 text-center" >
-                      <input type="checkbox" name="region" id="region">
-                      <label for="region" class="h6">Région</label>
+                      <input type="checkbox" name="region-filter" id="region-filter">
+                      <label for="region-filter" class="h6">Région</label>
                     </div>
 
 
@@ -265,7 +266,7 @@
                   </div>
                   <div class="col-md-3 col-xs-3 text-center">
                     <button id="btn-formation">
-                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-formation" class="text-primary">
+                      <img src="/img/icons8-flèche-vers-le-bas-50.webp" alt="arrow_open" id="arrow-formation" >
                     </button>
                   </div>
                 </div>
@@ -298,13 +299,84 @@
           </section>
 
           <section class=" col-md-10 text-center" id="catalogue"><p>Catalogue :</p>
-            <div><p>Barre </p>
-            </div>
-            <div><p>Carte 1</p>
-            </div>
-            <div><p>Carte 2</p>
+            <div class="input-box">
+              <i class="uil uil-search"></i>
+              <a class="Aimg" href="/404.html"><img src="img/magnifying-glass-solid 1.svg" style="margin-inline-start: 1%;"></a>
+              <input type="text" placeholder="Intitulé ..." id="searchInput" />
+              <a class="Aimg" href="/404.html"><img src="img/sliders-solid 1.svg" style="margin-inline-end: 5%;"></a>
             </div>
 
+
+            <article class="card formation-card" id="hover" >
+              <div class="cardimg">
+                <img  src="img/developpeurs-web-dessines-main_23-2148819604.jpg.avif" alt="Développeurs web dessinés à la main" class="img" />
+                <span id="CPF">CPF</span>
+                <span id="Region">Région</span>
+              </div>
+              <figcaption class="groupesvg">
+
+                <img src="img/award-solid.svg" alt="Récompense" id="svg1" />
+                <img src="img/hourglass-half-solid.svg" alt="Durée" id="svg2" />
+                <img src="img/building-solid.svg" alt="Institution" id="svg3" />
+              </figcaption>
+              <div>
+                <h1 class="TitreC">Développeur Web et Mobile</h1>
+
+                <p class="textP">
+                  Bac+2 - Titre professionnel<br />
+                  Formation sur 9 mois au centre Diginamic<br />
+                  Parcours Alternance/Continu
+                </p>
+              </div>
+              <footer class="groupebulle">
+
+
+                <p class="bulle">PHP</p>
+                <p class="bulle">HTML</p>
+                <p class="bulle">CSS</p>
+
+
+                <a href="404.html"  class="btn"  aria-label="En savoir plus sur la formation">
+                  <img src="img/fleche.png" alt="Flèche pointant vers la droite" />
+                </a>
+              </footer>
+            </article>
+
+
+
+            <article class="card formation-card" id="hover">
+              <div class="cardimg">
+                <img  src="img/logo java.webp" alt="Développeurs web dessinés à la main" class="img" />
+                <span id="CPF">CPF</span>
+                <span id="Region">Région</span>
+              </div>
+              <figcaption class="groupesvg">
+
+                <img src="img/award-solid.svg" alt="Récompense" id="svg1" />
+                <img src="img/hourglass-half-solid.svg" alt="Durée" id="svg2" />
+                <img src="img/building-solid.svg" alt="Institution" id="svg3" />
+              </figcaption>
+              <div>
+                <h1 class="TitreC">Développeur JAVA Full stack</h1>
+
+                <p class="textP">
+                  OPQUAST CERTIFIED<br>
+                  Formation sur 3 mois en distanciel<br>
+                  En intraentreprise uniquement
+                </p>
+              </div>
+              <footer class="groupebulle">
+
+                <p class="bulle">JAVA</p>
+                <p class="bulle">VUE.JS</p>
+                <p class="bulle">SQL</p>
+
+
+                <a href="404.html"  class="btn"  aria-label="En savoir plus sur la formation">
+                  <img src="img/fleche.png" alt="Flèche pointant vers la droite" />
+                </a>
+              </footer>
+            </article>
           </section>
 
         </section>
