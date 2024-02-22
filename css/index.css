@@ -4,9 +4,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce pour l'agrandissement et l'ombre */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre de base */
 }
-/* #hover:hover {
+#hover:hover {
   transform: scale(1.05); /* Agrandissement de 5% */
-/*   box-shadow: 7px 7px 8px 8px rgba(142, 142, 142, 1);} *//* Ombre plus prononcée */
+  box-shadow: 7px 7px 8px 8px rgba(142, 142, 142, 1);} /* Ombre plus prononcée */
 
 
 
@@ -64,7 +64,7 @@
 #svg1 {
   width: 31px;
   height: 21px;
-  
+
 }
 #svg2 {
   width: 27px;
@@ -73,14 +73,14 @@
 #svg3 {
   width: 27px;
   height: 27px;
-  
+
 }
 .groupesvg {
   display: grid;
   margin-inline-start: 4%;
 }
 .groupebulle {
-  
+
   height: 58px;
   background-color: #003350;
   border-radius: 0px 0 17px 17px;
@@ -223,32 +223,32 @@ span#Region::after {
   }
 
   .cardimg {
-   
-    width: 100%; 
-    max-width: 450px; 
+
+    width: 100%;
+    max-width: 450px;
     display: flex;
     flex-wrap: wrap;
   }
-.img{
+  .img{
     border-radius: 18px 18px 0 0;
     max-width: 100%;
-}
+  }
   .groupebulle {
     /* Ajustez la mise en page des bulles */
     min-width: 100%;
     justify-content: center; /* Centre les bulles dans le conteneur */
   }
-.bulle{
+  .bulle{
     margin-inline-start: 2%;
     padding: 0 5PX 0 5px;
-}
-  
+  }
+
   .btn {
     background-color: #003350;
     border-radius:  0 0 17px 0;
     margin-inline-start: 40%;
 
-    
+
   }
   .TitreC {
     font-size: 24px;
@@ -261,7 +261,7 @@ span#Region::after {
     font-size: 18px;
     line-height: 41px;
     margin-inline-start: 10px;
-    
+
   }
 
   #svg1{width: 18px; height: 23px;}
@@ -276,16 +276,16 @@ span#Region::after {
   }
 
   span#CPF{
-    margin-top: 2%;
-    max-height: 20px;
+    margin-top: 22%;
+    max-height: 14px;
   }
-span#Region{
-  left: -137px;    
-    max-height: 20px;       
-    margin-top: 6%;
+  span#Region{
+
+    left: -143px;
+    max-height: 20px;
+    margin-top: 25%;
   }
 }
-
 
 
 
