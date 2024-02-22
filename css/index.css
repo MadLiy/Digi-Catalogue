@@ -276,13 +276,14 @@ span#Region::after {
   }
 
   span#CPF{
-    margin-top: 2%;
-    max-height: 20px;
+    margin-top: 22%;
+    max-height: 14px;
   }
 span#Region{
-  left: -137px;    
-    max-height: 20px;       
-    margin-top: 6%;
+  
+    left: -143px;
+    max-height: 20px;
+    margin-top: 25%;
   }
 }
 
